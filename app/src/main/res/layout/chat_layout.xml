@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dock"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/ll_messages_card"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_height="80dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="60dp"
+                android:src="@drawable/sampleimage"
+                android:layout_height="60dp"
+                android:background="@color/transparent"
+                app:civ_border_color="#FF000000"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight=".8"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="0dp"
+                    android:weightSum="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_weight=".5"
+                        android:layout_width="match_parent"
+                        android:gravity="bottom"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:id="@+id/txt_mess_name"
+                            android:gravity="center"
+                            android:fontFamily="@font/ralelightt"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="sam"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:gravity="top"
+                        android:layout_weight=".5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:gravity="center"
+                            android:fontFamily="@font/raleregular"
+                            android:textColor="@color/lightgrey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hello my name is ?"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight=".2"
+                    android:layout_width="0dp"
+                    android:weightSum="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_weight=".5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+
+                            android:gravity="center|bottom"
+                            android:textColor="@color/white"
+                            android:layout_width="match_parent"
+                            android:fontFamily="@font/ralelightt"
+                            android:layout_height="match_parent"
+                            android:text="7:03 pm"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:gravity="center|top"
+                        android:layout_weight=".5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/message_count"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:text="1"
+                            android:textSize="8sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</LinearLayout>

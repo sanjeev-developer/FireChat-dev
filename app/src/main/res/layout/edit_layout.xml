@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    card_view:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dock"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_click_update_eusername"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/edit_username_icon" />
+
+                <TextView
+                    android:gravity="bottom"
+                    android:id="@+id/txt_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/quickdot"
+                    android:text="Update username"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_update_username_update"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_name_update"
+                    android:hint="enter username"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/black"
+                    android:fontFamily="@font/ralelight"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/dialog_curve"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/but_update_name"
+                    android:background="@drawable/buttoncurve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/ralelight"
+                    android:text="update"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/notificationgrey" />
+
+        <LinearLayout
+            android:id="@+id/ll_click_update_status"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_marginLeft="4dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/edit_status_icon" />
+
+            <TextView
+                android:gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/quickdot"
+                android:text="Update status"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_update_status_update"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_status_update"
+                    android:hint="enter status"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="top"
+                    android:textColorHint="@color/black"
+                    android:fontFamily="@font/ralelight"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/dialog_curve"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/but_update_status"
+                    android:background="@drawable/buttoncurve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/ralelight"
+                    android:text="update"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false" />
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+

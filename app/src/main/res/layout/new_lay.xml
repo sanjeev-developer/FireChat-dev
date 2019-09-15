@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.firechat.kitlabs_d_0031.firechat.SquareFrameLayout2
+        android:id="@+id/sq_1"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/sampleimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.firechat.kitlabs_d_0031.firechat.SquareFrameLayout2>
+
+    <com.firechat.kitlabs_d_0031.firechat.SquareFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sq_1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/curve"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/ralesemi"
+                android:text="name"
+                android:textColor="@color/babypink" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/ralemedium"
+                android:text="Michale Angelo, 23"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/ralesemi"
+                android:text="email"
+                android:textColor="@color/babypink" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/ralethin"
+                android:text="Michale@gmail.com"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/ralesemi"
+                android:text="status"
+                android:textColor="@color/babypink" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/ralethin"
+                android:text="life is good"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+
+    </com.firechat.kitlabs_d_0031.firechat.SquareFrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:background="@null"
+        android:src="@drawable/pearl"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

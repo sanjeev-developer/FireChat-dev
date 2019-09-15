@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dock"
+    android:weightSum="10">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/dock"
+        android:gravity="center"
+        android:weightSum="10"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_weight="10"
+            android:id="@+id/txt_mess_name"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quickdot"
+            android:text="inbox"
+            android:textSize="25sp" />
+
+
+        <ImageView
+            android:id="@+id/img_setting_dot"
+            android:layout_gravity="center_vertical"
+            android:layout_width="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/threedot"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ll_farg"
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/notificationgrey" />-->
+
+    <!--<androidx.cardview.widget.CardView-->
+    <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:background="@drawable/splashchat_curve"-->
+    <!--card_view:cardCornerRadius="20dp"-->
+    <!--android:layout_height="wrap_content">-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+
+
+            <LinearLayout
+                android:background="@drawable/tab_left_curve"
+                android:id="@+id/ll_matches"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/img_bot_matches"
+                    android:src="@drawable/add_friends_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="35dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:background="@color/darkgrey"
+                android:id="@+id/ll_messages"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/img_bot_messages"
+                    android:src="@drawable/chat_dock"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="35dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_profile"
+                android:background="@drawable/tab_right_curve"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/img_bot_profile"
+                    android:src="@drawable/friends_dock"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="35dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    <!---->
+    <!--</androidx.cardview.widget.CardView>-->
+
+</LinearLayout>
